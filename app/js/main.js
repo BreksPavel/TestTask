@@ -67,6 +67,7 @@ if (menuLinks.length > 0) {
                 burgerButton.classList.remove('menu__open');
                 burgerBody.classList.remove('menu__open');
 
+                burgerButton.removeAttribute('style')
                 burgerBackground.setAttribute('src', "img/burger.svg")
             }
 

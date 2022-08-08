@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="img/logo.png" alt="logo" class="header__logo-img">
+                    </div>
+                    <nav class="menu ">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a data-goto=".portfolio__title" href="#" class="menu__list-link">Портфолио</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a data-goto=".about__title" href="#" class="menu__list-link">О компании</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a data-goto=".offer__title" href="#" class="menu__list-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn btn">
+                        Оставить заявку
+                    </button>
+                    <button class="burger-menu">
+                        <img class="burger-menu__button" src="img/burger.svg" alt="burger">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section-hero">
+                <div class="container">
+                    <div class="section-hero__content">
+                        <p class="section-hero__text">
+                            Маркетинговое агентство.
+                            С нами вы растете как на дрожжах
+                        </p>
+                        <div class="section-hero__arrow">
+                            <a id="portfolio" href="#portfolio" class="section-hero__arrow-item">
+                                <img src="img/arrow.svg" alt="Arrow Down" class="section-hero__arrow-img">
+                            </a>
+                        </div>
+                        <ul class="section-hero__social">
+                            <li class="section-hero__social-item">
+                                <a href="#"
+                                    class=" section-hero__social-link section-hero__social-link--whatsapp">whatsapp</a>
+                            </li>
+                            <li class="section-hero__social-item">
+                                <a href="#"
+                                    class=" section-hero__social-link section-hero__social-link--telegramm">telegramm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="portfolio__inner">
+                        <div class="portfolio__title">
+                            <h2 class="portfolio__title-text">Портфолио</h2>
+                            <button class="portfolio__title-btn">СМОТРЕТЬ ВСЕ</button>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--1">
+                                    <button class="gallery__item-btn">МАРКЕТИНГ</button>
+                                </a>
+                                <a href="" class="gallery__item-title">«Натали» — Ивановский трикотаж оптом</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">Редизайн сайта</a>,
+                                    <a href="#" class="gallery__item-link">поддержка сайта</a>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--2">
+                                    <button class="gallery__item-btn">ВЕБ РАЗРАБОТКА</button>
+                                </a>
+                                <a href="" class="gallery__item-title">Podium — эротический массаж</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">Разработка</a>,
+                                    <a href="#" class="gallery__item-link">редизайн</a>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--3">
+                                    <button class="gallery__item-btn">ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ</button>
+                                </a>
+                                <a href="" class="gallery__item-title">Аудит отдела маркетинга и продаж для Название
+                                    бренда длинное название...</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">Аудит</a>,
+                                    <a href="#" class="gallery__item-link">маркетинг сюда кратко теги</a>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--4">
+                                    <button class="gallery__item-btn">ВЕДЕНИЕ ГРУПП В СОЦ СЕТЯХ</button>
+                                </a>
+                                <a href="" class="gallery__item-title">Аудит отдела маркетинга и продаж для Название
+                                    бренда</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">Аудит </a>,
+                                    <a href="#" class="gallery__item-link">маркетинг сюда кратко теги</a>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--5">
+                                    <button class="gallery__item-btn">ОПТИМИЗАЦИЯ SEO САЙТА</button>
+                                </a>
+                                <a href="" class="gallery__item-title">Аудит отдела маркетинга и продаж для Название
+                                    бренда</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">маркетинг сюда кратко теги</a>,
+                                    <a href="#" class="gallery__item-link">Аудит</a>
+                                </div>
+                            </div>
+                            <div class="gallery__item">
+                                <a href="" class="gallery__item-img gallery__item-img--6">
+                                    <button class="gallery__item-btn">СОЗДАНИЕ РЕКЛАМНОЙ КОМПАНИИ</button>
+                                </a>
+                                <a href="" class="gallery__item-title">Аудит отдела маркетинга и продаж для Название
+                                    бренда</a>
+                                <div class="gallery__item-links">
+                                    <a href="#" class="gallery__item-link">Аудит</a>,
+                                    <a href="#" class="gallery__item-link">маркетинг сюда кратко теги</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="about" class="portfolio__btn ">ВСЕ КЕЙСЫ</button>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <h2 class="about__title">
+                        О компании
+                    </h2>
+                    <ul class="about__list">
+                        <li class="about__item about__item--1">ОТДЕЛОВ</li>
+                        <li class="about__item about__item--2">МАРКЕТОЛОГОВ<lil>
+                        <li class="about__item about__item--3">ДИЗАЙНЕРА</li>
+                        <li class="about__item about__item--4">КОПИРАЙТЕРА</li>
+                        <li class="about__item about__item--5">РАЗРАБОТЧИКОВ</li>
+                    </ul>
+                    <div class="about__content">
+                        <div class="about__description">
+                            <p class="about__description-text">
+                                Мы — команда специалистов с опытом, энтузиазмом и лёгким недосыпом. Маркетинговое
+                                агентство «Дрожжи» было основано
+                                в 2015 году, как компания, где можно получить комплексное интернет- и
+                                oффлайн-продвижение. На сегодняшний день мы не
+                                зависим ни от ниши, ни от географии, ни от специфики продукта.
+                                В портфолио компании сотни успешных кейсов, способных помочь вам в реализации своей
+                                идеи.
+                            </p>
+                            <div class="about__description-list">
+                                <div class="about__description-item">
+                                    <div class="about__description-number">1000+</div>
+                                    <p class="about__description-item-text">реализованных
+                                        проектов</p>
+                                </div>
+                                <div class="about__description-item">
+                                    <div class="about__description-number">92</div>
+                                    <p class="about__description-item-text">клиента доверили нам свои проекты</p>
+                                </div>
+                                <div class="about__description-item">
+                                    <div class="about__description-number">5+</div>
+                                    <p class="about__description-item-text">лет успешной работы</p>
+                                </div>
+                            </div>
+                            <button class="about__description-btn">ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="popup">
+                            <div class="popup__content">
+                                <img src="img/about-img.jpg" alt="Our team" class="popup__img">
+                                <button class="popup__close">
+                                    <img src="img/close.svg" alt="close" class="poup__close-img">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="about__picture">
+                            <a href="#" class="about__picture-popup">
+                                <img src="img/about-img.jpg" alt="Our team" class="about__picture-img">
+                            </a>
+                            <p class="about__picture-title">Команда агентства «Дрожжи»</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offer">
+                <div class="container">
+                    <h2 class="offer__title">Оставтье заявку</h2>
+                    <div class="offer__inner">
+                        <div class="offer__help">
+                            <div class="offer__img">
+                                <img src="img/photo.png" alt="photo">
+                            </div>
+                            <div class="offer__name">Юлия Дижа</div>
+                            <div class="offer__text">Поможет запустить ваш проект</div>
+                        </div>
+                        <form class="offer__form">
+                            <p class="offer__form-title">Ваше имя *</p>
+                            <input type="text " class="offer__form-input " placeholder="Иван Василич">
+                            <p class="offer__form-title">Телефон или мессенджер *</p>
+                            <input type="text" class="offer__form-input">
+                            <p class="offer__form-title">Красткое описание задачи *</p>
+                            <textarea name="text" class="offer__form-input" cols="30" rows="5"></textarea>
+                            <button class="offer__form-btn btn" type="submit"> Отправить </button>
+                        </form>
+                    </div>
+                    <div class="offer__links">
+                        <h4 class="offer__links-title">Скачать брифинги на:</h4>
+                        <a href="#" class="offer__links-link">разработку логотипа</a>
+                        <a href="#" class="offer__links-link">разработку сайта</a>
+                        <a href="#" class="offer__links-link">разработку лендинга</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__items">
+                        <div class="footer__item">2015-2021 © Дрожжи™</div>
+                        <div class="footer__item">ООО «РВБ-Маркетинг»</div>
+                        <div class="footer__item">Политика конфиденциальности</div>
+                    </div>
+                    <div class="footer__logo">
+                        <img src="img/footerLogo.jpg" alt="logo" class="footer__logo-img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

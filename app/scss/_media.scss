@@ -1,0 +1,130 @@
+@media(max-width: 768px){
+    .header__btn{
+        display: none;
+    }
+    
+    .menu {
+            position: fixed;
+            top: 93px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #EBEDEE;
+            padding-left: 20px;
+            transform: translateX(-100%);
+            transition: all 0.5s;
+            
+        }
+        .menu__open {
+        transform: translateX(0);
+        }
+    .header__inner{
+        flex-direction: column;
+        align-items: start;
+    }
+    .menu__list{
+        flex-direction: column;
+        align-items: start;
+    }  
+    .menu__list-item{
+        margin-bottom: 20px;
+    }  
+    .header__logo{
+        margin: 30px 0 40px;
+    }
+    .burger-menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 44px;
+    }    
+    .section-hero__social-link{
+    font-size: 0px;
+    }
+    .section-hero__social-link::before{
+            width: 30px;
+            height: 30px;
+            top: -23px;
+    }
+    .portfolio__title{
+        flex-direction: column;
+        align-items: start;
+    }
+    .portfolio__title-text{
+        margin-bottom: 20px;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr) ;
+        grid-auto-rows: 0;
+        overflow-y: hidden;
+        row-gap: 0;
+        padding-bottom: 0;
+    }
+    .gallery__item{
+        padding-bottom: 35px;
+    }
+    
+    .about__list{
+        flex-direction: column;
+        align-items: start;
+    }
+    .about__content{
+        flex-direction: column;
+            align-items: start;
+    }
+    .about__description{
+        width: 100%;
+
+    }
+    .about__description-list{
+        flex-direction: column;
+            align-items: start;
+    }
+    .about__description-item{
+        padding-bottom: 10px;
+    }
+    .about__description-btn{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about__item{
+        margin-bottom: 12px;
+    }
+    .offer__inner{
+        flex-direction: column;
+            align-items: start;
+    }
+    .offer__links{
+        margin: 0;
+    }
+    .offer__form-btn{
+        display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+    }
+    .offer__help{
+        margin-bottom: 20px;
+    }
+    .offer__links{
+        margin-bottom: 20px;
+    }
+        
+
+
+
+
+
+    .footer__inner{
+        height: 250px;
+    }
+    .footer__items{
+        flex-direction: column;
+    }
+    .footer__item{
+        padding-bottom: 25px;
+    }
+}
+
+

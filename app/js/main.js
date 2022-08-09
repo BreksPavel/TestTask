@@ -108,15 +108,29 @@ const poupClose = document.querySelector('.popup__close')
 
 
 popupOpen.addEventListener('click', function () {
-    document.querySelector('.popup').classList.add('open')
+    document.querySelector('.popup').classList.add('open');
     document.body.classList.add('lock');
 })
 
 
 poupClose.addEventListener('click', function () {
-    document.querySelector('.popup').classList.remove('open')
+    document.querySelector('.popup').classList.remove('open');
     document.body.classList.remove('lock');
 })
+
+
+
+//добавляем закрытие модалки по клику по body
+const bodyClose = document.querySelector('.popup')
+
+bodyClose.addEventListener('click', function () {
+    bodyClose.classList.remove('open');
+    //запрещаю клику по фото закрывать окно. останавливаю передачу события
+    document.querySelector('.popup__content').addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+    })
+
+});
 
 
 

@@ -23,11 +23,9 @@ const burgerBackground = document.querySelector('.burger-menu__button');
 
 if (burgerButton) {
     burgerButton.addEventListener('click', function (e) {
-
         document.body.classList.toggle('lock');
         burgerButton.classList.toggle('menu__open');
         burgerBody.classList.toggle('menu__open');
-
 
         if (burgerBackground.getAttribute('src') == "img/close.svg") {
             burgerBackground.setAttribute('src', "img/burger.svg");
@@ -42,7 +40,6 @@ if (burgerButton) {
         else {
             burgerButton.style.right = '36px';
         }
-
     })
 }
 
@@ -66,16 +63,14 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('lock');
                 burgerButton.classList.remove('menu__open');
                 burgerBody.classList.remove('menu__open');
-
                 burgerButton.removeAttribute('style')
                 burgerBackground.setAttribute('src', "img/burger.svg")
             }
-
             window.scrollTo({
                 top: goToBlockValue,
                 behavior: "smooth"
             });
-            e.preventDefault();
+            e.preventDefault();   // убираем действие для элемента по-умолчанию
         }
     }
 }
@@ -89,7 +84,6 @@ let form = document.querySelector('.offer__form'),
     formInputs = document.querySelectorAll('.offer__form-input')
 
 form.onsubmit = function () {
-
     formInputs.forEach(function (input) {
         if (input.value === '') {
             input.classList.add('input-error')
@@ -104,14 +98,13 @@ form.onsubmit = function () {
 //всплывающая картинка
 
 const popupOpen = document.querySelector('.about__picture-popup')
-const poupClose = document.querySelector('.popup__close')
+        poupClose = document.querySelector('.popup__close')
 
 
 popupOpen.addEventListener('click', function () {
     document.querySelector('.popup').classList.add('open');
     document.body.classList.add('lock');
 })
-
 
 poupClose.addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('open');
@@ -124,12 +117,12 @@ poupClose.addEventListener('click', function () {
 const bodyClose = document.querySelector('.popup')
 
 bodyClose.addEventListener('click', function () {
+    document.body.classList.remove('lock');
     bodyClose.classList.remove('open');
     //запрещаю клику по фото закрывать окно. останавливаю передачу события
     document.querySelector('.popup__content').addEventListener('click', function (e) {
-        e.stopImmediatePropagation();
+        e.stopImmediatePropagation();        
     })
-
 });
 
 

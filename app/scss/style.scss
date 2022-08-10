@@ -23,10 +23,6 @@
         
     }
 }
-
-
-
-
 .btn {    
     cursor: pointer;
     background: #D22020;
@@ -35,8 +31,8 @@
     padding: 10px 20px;
     color: #FFFFFF;
     font-size: 16px;
-
 }
+
 .menu{
     flex-grow: 0.5;
     &__list{
@@ -208,7 +204,6 @@
         @extend %title-fontH2;
     }
     &__title-btn{
-
         border: none;
         background-color: transparent;
         font-size: 18px;
@@ -435,8 +430,7 @@
     }
     &__form-textarea{
         padding: 10px;
-    }
-    
+    }    
 }
 
 .popup{
@@ -476,7 +470,5 @@
 .open{
     visibility: visible;
 }
-
-
 
 @import 'media';
